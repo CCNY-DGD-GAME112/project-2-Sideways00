@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Callbacks;
 using UnityEngine;
 
 public class Projectile3DController : MonoBehaviour
@@ -12,7 +13,8 @@ public class Projectile3DController : MonoBehaviour
     public float Speed = 30;
     //How hard do I knockback things I hit?
     public float Knockback = 10;
-
+    public GameObject Hazard;
+    public EnemyHP EnemyHP;
     void Start()
     {
         //When I spawn, I fly straight forwards at my Speed
@@ -22,6 +24,13 @@ public class Projectile3DController : MonoBehaviour
     private void OnCollisionEnter(Collision other)
     {
         //If I hit something with a rigidbody. . .
+        if (other.gameObject.tag == "Hazard")
+        { 
+            EnemyHP = other.gameObject.GetComponent<EnemyHP>();
+            EnemyHP.health = EnemyHP.health - 1;
+            Destroy(gameObject);
+        }
+
         Rigidbody rb = other.gameObject.GetComponent<Rigidbody>();
         if (rb != null)
         {
@@ -30,5 +39,9 @@ public class Projectile3DController : MonoBehaviour
         }
         //If I hit anything, I despawn
         Destroy(gameObject);
+        
     }
+    
+    
+        
 }
