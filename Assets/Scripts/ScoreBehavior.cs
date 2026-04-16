@@ -7,15 +7,12 @@ public class ScoreBehavior : MonoBehaviour
     public EnemyHP EnemyHP;
     public int Score = 0;
     public TextMeshPro ScoreText;
+    public GameManager GameManager;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    public void UpdateScore()
-    {
-        Debug.Log("3");
-        ScoreText.text = "Score: " + Score;
-    }
+   
     void Start()
     {
-        UpdateScore();
+        GameManager.UpdateScore();
     }
     private void OnCollisionEnter(Collision other)
     {
@@ -25,7 +22,7 @@ public class ScoreBehavior : MonoBehaviour
         {
             Debug.Log("2");
             Score++;
-            UpdateScore();
+            GameManager.UpdateScore();
         }
     }
 
