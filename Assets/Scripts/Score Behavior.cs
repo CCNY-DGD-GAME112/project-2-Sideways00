@@ -8,7 +8,7 @@ public class ScoreBehavior : MonoBehaviour
     public GameManager Instance;
     void Start()
     {
-       GameManager.Instance.UpdateScore();
+        GameManager.Instance.UpdateScore();
     }
     private void OnCollisionEnter(Collision other)
     {
