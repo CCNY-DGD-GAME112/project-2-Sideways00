@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 2ca277151b3e00a41869d41823222d21
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - RB: {fileID: 3149270933928261254, guid: 1f6cb3ad9ef55b34b87d5334d91b52af, type: 3}
+  - Hazard: {fileID: 7027283823068510984, guid: 1f6cb3ad9ef55b34b87d5334d91b52af, type: 3}
+  - EnemyHP: {fileID: -2337486893250208318, guid: 1f6cb3ad9ef55b34b87d5334d91b52af, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
