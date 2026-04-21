@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
     public int Score = 0;
     public TextMeshProUGUI ScoreText;
     public static GameManager Instance;
-
+    public TextMeshProUGUI GameOvers;
     public void Awake()
     {
         if (Instance)
@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
         Debug.Log("3");
         Score += point;
         ScoreText.text = "Score: " + Score;
+        GameOvers.text = "Score: " + Score;
     }
    public GameObject gameOverUI;
    
