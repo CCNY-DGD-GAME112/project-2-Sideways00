@@ -6,6 +6,7 @@ MonoImporter:
   defaultReferences:
   - EnemyHP: {fileID: -2337486893250208318, guid: 1f6cb3ad9ef55b34b87d5334d91b52af, type: 3}
   - ScoreText: {fileID: 4051777785512752357, guid: f448f0ece02fba24b9cc5ad97071164f, type: 3}
+  - gameOverUI: {fileID: 6255889079938174618, guid: e114560944956ba48acf20c7d342d37b, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

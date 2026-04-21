@@ -1,6 +1,6 @@
 using UnityEngine;
 using TMPro;
-
+using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public EnemyHP EnemyHP;
@@ -22,6 +22,12 @@ public class GameManager : MonoBehaviour
         Debug.Log("3");
         Score += point;
         ScoreText.text = "Score: " + Score;
+    }
+   public GameObject gameOverUI;
+   
+   public void GameOver()
+    {
+        gameOverUI.SetActive(true);
     }
    
     // Update is called once per frame
