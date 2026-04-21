@@ -12,12 +12,15 @@ public class GameManager : MonoBehaviour
     {
         if (Instance)
         {
-            Instance = this;
+            Destroy(gameObject);
         }
+        Instance = this;
     }
-    public void UpdateScore()
+
+    public void UpdateScore(int point)
     {
         Debug.Log("3");
+        Score += point;
         ScoreText.text = "Score: " + Score;
     }
    

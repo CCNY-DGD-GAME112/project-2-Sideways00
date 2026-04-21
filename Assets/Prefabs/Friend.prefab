@@ -748,7 +748,6 @@ GameObject:
   - component: {fileID: 3149270933928261254}
   - component: {fileID: 7227799919903319564}
   - component: {fileID: -2337486893250208318}
-  - component: {fileID: -4922606283084167441}
   m_Layer: 0
   m_Name: Friend
   m_TagString: Hazard
@@ -786,7 +785,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RB: {fileID: 3149270933928261254}
   Anim: {fileID: 7227799919903319564}
-  Speed: 1
+  Speed: 4
   Target: {fileID: 0}
 --- !u!54 &3149270933928261254
 Rigidbody:
@@ -849,22 +848,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ab9f83ce6c3a9d41b5a0ecf191e4151, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHP
-  health: 8
---- !u!114 &-4922606283084167441
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7027283823068510984}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67fc996a63115ba409105d143c7a6d7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ScoreBehavior
-  EnemyHP: {fileID: -2337486893250208318}
-  Score: 0
-  ScoreText: {fileID: 2394532351692387603, guid: 12dfde6238dd92f4eb563ae95d6b71ed, type: 3}
+  health: 5
 --- !u!1 &8385268933017969752
 GameObject:
   m_ObjectHideFlags: 0

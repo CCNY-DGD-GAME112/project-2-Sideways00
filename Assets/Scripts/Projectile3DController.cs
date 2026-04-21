@@ -28,6 +28,7 @@ public class Projectile3DController : MonoBehaviour
         { 
             EnemyHP = other.gameObject.GetComponent<EnemyHP>();
             EnemyHP.health = EnemyHP.health - 1;
+            
             Destroy(gameObject);
         }
 
